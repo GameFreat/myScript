@@ -5,7 +5,7 @@ echo "This script also adds my some personal aliases too."
 echo " "
 echo "Do you want to install Rocket?(y/n)"
 read Rocket
-if [[$Rocket -eq "y"]];then
+if [[ $Rocket -eq "y" ]];then
     git clone https://github.com/xenomech/Rocket.git
     cd Rocket
     echo "Do you want to install the plain version or the emoji version?(p/e)"
