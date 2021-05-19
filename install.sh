@@ -15,7 +15,6 @@ fi
 echo "Do you want to install NVM?(y/n)"
 read nvm
 if [[ $nvm -eq "y" ]];then
-    echo "# ---------------NVM----------" >>~/.bashrc
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     export NVM_DIR="$HOME/.config/nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -29,6 +28,6 @@ if [[ $resp -eq "y" ]];then
     echo "# Personal Aliases" >>~/.bashrc
     echo "alias home='cd ~'">>~/.bashrc
     echo "alias root='cd /'">>~/.bashrc 
-    source
+    source ~/.bashrc 
 fi
 echo "Completed!!!!!!!"
