@@ -31,3 +31,8 @@ if [[ $resp -eq "y" ]];then
     source ~/.bashrc 
 fi
 echo "Completed!!!!!!!"
+echo "Clear screen??(y/n)"
+read clr
+if [[ $clr -eq "y" ]];then
+    clear
+fi
