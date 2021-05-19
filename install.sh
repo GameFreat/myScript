@@ -15,7 +15,7 @@ fi
 echo "Do you want to install NVM?(y/n)"
 read nvm
 if [[ $nvm -eq "y" ]];then
-    cat "# ---------------NVM----------" >>~/.bashrc
+    echo "# ---------------NVM----------" >>~/.bashrc
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     source ~/.bashrc
     nvm install 'lts/*'
@@ -23,9 +23,9 @@ fi
 echo "Wanna add aliases like 'home=cd ~' and 'root=cd /'?(y/n)"
 read resp
 if [[ $resp -eq "y" ]];then
-    cat "# Personal Aliases" >>~/.bashrc
-    cat "alias home='cd ~'">>~/.bashrc
-    cat "alias root='cd /'">>~/.bashrc 
+    echo "# Personal Aliases" >>~/.bashrc
+    echo "alias home='cd ~'">>~/.bashrc
+    echo "alias root='cd /'">>~/.bashrc 
     source
 fi
 echo "Completed!!!!!!!"
