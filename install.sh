@@ -10,7 +10,7 @@ if [[ $Rocket -eq "y" ]];then
     cd Rocket
     echo "Do you want to install the plain version or the emoji version?(p/e)"
     read varient
-    ./install $varient
+    ./install.sh $varient
 fi
 echo "Do you want to install NVM?(y/n)"
 read nvm
