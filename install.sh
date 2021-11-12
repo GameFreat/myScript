@@ -11,13 +11,13 @@ if [[ $Rocket == "y" ]];then
     echo "Do you want to install the plain version or the emoji version?(p/e)"
     read varient
     ./install.sh $varient
-else 
-    echo "Do you want to install the net codes?? y/n"
-    read netCodes
-    if [[ $netCodes == "y" ]];then
-        echo "PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[1;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '" >>~/.bashrc
-        # echo 'PROMPT_COMMAND='echo -en "\033]0; Terminal \a"'" >>~/.bashrc
-    fi
+#else 
+#    echo "Do you want to install the net codes?? y/n"
+#    read netCodes
+#    if [[ $netCodes == "y" ]];then
+#        echo "PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[1;36m\] @ \[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\] ▶\[\033[0m\] '" >>~/.bashrc
+#        # echo 'PROMPT_COMMAND='echo -en "\033]0; Terminal \a"'" >>~/.bashrc
+#    fi
 fi
 echo "Do you want to install NVM?(y/n)"
 read nvm
