@@ -1,4 +1,8 @@
 clear
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
 printf '\t\t\t__Welcome to my script___\n'
 echo "This script install NVM ,also Rocket, a bash script to style the bash prompt"
 echo "This script also adds my some personal aliases too."
