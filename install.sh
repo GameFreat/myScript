@@ -35,6 +35,7 @@ if [[ $resp == "y" ]];then
     echo "# Personal Aliases" >>~/.bashrc
     echo "alias home='cd ~'">>~/.bashrc
     echo "alias root='cd /'">>~/.bashrc 
+    echo "alias python='python3'">>~/.bashrc
     source ~/.bashrc 
 fi
 echo "Completed!!!!!!!"
